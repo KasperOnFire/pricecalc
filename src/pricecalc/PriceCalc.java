@@ -80,19 +80,19 @@ public class PriceCalc {
             }
         }
         totalPrice = antal * price;
-        if (totalPrice > 50000) {
+        if (totalPrice >= 50000) {
             totalPrice = (float) (totalPrice * 0.85);
             System.out.println("Discount : 15%");
-        } else if (totalPrice > 10000) {
+        } else if (totalPrice >= 10000) {
             totalPrice = (float) (totalPrice * 0.9);
             System.out.println("Discount : 10%");
-        } else if (totalPrice > 7000) {
+        } else if (totalPrice >= 7000) {
             totalPrice = (float) (totalPrice * 0.93);
             System.out.println("Discount : 7%");
-        } else if (totalPrice > 5000) {
+        } else if (totalPrice >= 5000) {
             totalPrice = (float) (totalPrice * 0.95);
             System.out.println("Discount : 5%");
-        } else if (totalPrice > 1000) {
+        } else if (totalPrice >= 1000) {
             totalPrice = (float) (totalPrice * 0.97);
             System.out.println("Discount : 3%");
         }
